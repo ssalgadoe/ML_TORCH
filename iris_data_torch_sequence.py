@@ -16,8 +16,6 @@ H = 100
 x = Variable(T(features), requires_grad=False)
 y = Variable(T(target), requires_grad=False)
 
-w1 = Variable(torch.randn(d_in, H), requires_grad = True)
-w2 = Variable(torch.randn(H, d_out), requires_grad = True)
 
 
 model = torch.nn.Sequential(
