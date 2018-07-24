@@ -13,7 +13,6 @@ y = Variable(torch.randn(N,d_out).type(dtype), requires_grad=False)
 w1 = Variable(torch.randn(d_in,H).type(dtype), requires_grad=True)
 w2 = Variable(torch.randn(H,d_out), requires_grad=True)
 
-
 lr = 0.0001
 for i in range(50):
     y_pred = x.mm(w1).clamp(min=0).mm(w2)
